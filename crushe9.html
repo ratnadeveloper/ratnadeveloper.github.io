@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Depavath Ratna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #c0c0c0;
+            color: #333;
+        }
+
+        .rXe {
+            max-width: 794px;
+            margin: 0 auto;
+            background: #1b1f3a;
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .rXe a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 14px;
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 4px;
+        }
+
+        .rXe a:hover {
+            background: rgba(255, 255, 255, 0.22);
+        }
+
+        @media print {
+
+            html,
+            body {
+                height: 100%;
+            }
+
+            body {
+                background: #fff;
+            }
+
+            .rXe {
+                display: none !important;
+            }
+
+            .rXl {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            @page {
+                margin: 0;
+                size: A4;
+            }
+        }
+
+        .rXl {
+            max-width: 794px;
+            margin: 0 auto 20px;
+            display: grid;
+            grid-template-columns: 225px 1fr;
+            background: #fff;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* SIDEBAR */
+        .rXh {
+            background: #1b1f3a;
+            color: #fff;
+            padding: 28px 16px;
+        }
+
+        .rXa {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .rXm {
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .rX7 {
+            text-align: center;
+            font-size: 14pt;
+            font-weight: 700;
+            margin-bottom: 1px;
+        }
+
+        .rX8 {
+            text-align: center;
+            font-size: 7.5pt;
+            color: #8b8fcf;
+            margin-bottom: 20px;
+        }
+
+        .rX4 {
+            margin-bottom: 18px;
+        }
+
+        .rX5 {
+            font-size: 8.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: #6c9ffc;
+            margin-bottom: 8px;
+            padding-bottom: 3px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .rX9 {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin-bottom: 6px;
+            font-size: 7pt;
+            color: #c8c8e0;
+        }
+
+        .rX9 i {
+            color: #6c9ffc;
+            width: 11px;
+            font-size: 8pt;
+        }
+
+        .rX9 a {
+            color: #c8c8e0;
+            text-decoration: none;
+        }
+
+        .rXb {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+            font-size: 8pt;
+            color: #c8c8e0;
+        }
+
+        .rXb .rXn {
+            color: #6c9ffc;
+            font-size: 7pt;
+            font-weight: 500;
+        }
+
+        .rX6 {
+            font-size: 7pt;
+            color: #c8c8e0;
+            margin-bottom: 4px;
+            padding-left: 9px;
+            position: relative;
+            line-height: 1.35;
+        }
+
+        .rX6::before {
+            content: "\2022";
+            position: absolute;
+            left: 0;
+            color: #6c9ffc;
+        }
+
+        .rX6 strong {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* CONTENT */
+        .rXi {
+            padding: 28px 26px;
+        }
+
+        .rXj {
+            margin-bottom: 14px;
+        }
+
+        .rX3 {
+            font-size: 10.5pt;
+            font-weight: 700;
+            color: #1b1f3a;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 7px;
+            padding-bottom: 3px;
+            border-bottom: 1.5px solid #bbb;
+        }
+
+        .rXk p {
+            font-size: 8pt;
+            color: #222;
+            line-height: 1.55;
+        }
+
+        .rXc {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .rXd h3 {
+            font-size: 9pt;
+            font-weight: 600;
+            color: #1b1f3a;
+        }
+
+        .rXd .rXq {
+            font-size: 8pt;
+            color: #444;
+        }
+
+        .rXd .rXg {
+            font-size: 8pt;
+            color: #333;
+            font-style: italic;
+        }
+
+        .rXd .rXf {
+            font-size: 7pt;
+            color: #222;
+            margin-top: 2px;
+        }
+
+        .rXd .rXf strong {
+            color: #222;
+        }
+
+        .rX2 {
+            margin-bottom: 8px;
+        }
+
+        .rX2 h3 {
+            font-size: 9pt;
+            font-weight: 600;
+            color: #1b1f3a;
+        }
+
+        .rX2 .rXp {
+            font-size: 6.5pt;
+            color: #6c9ffc;
+            font-weight: 500;
+            margin-bottom: 1px;
+            letter-spacing: 0.3px;
+        }
+
+        .rX2 ul {
+            padding-left: 13px;
+            margin: 0;
+        }
+
+        .rX2 li {
+            font-size: 7.5pt;
+            color: #222;
+            margin-bottom: 1px;
+            line-height: 1.4;
+        }
+
+        .rX1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 3px 12px;
+        }
+
+        .rX1 span {
+            font-size: 8pt;
+            color: #333;
+        }
+
+        .rX0 {
+            font-size: 8pt;
+            color: #333;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rXl">
+        
+        <div class="rXh">
+            <div class="rXa">
+                <img src="hanzohit.jpg" alt="Depavath Ratna" class="rXm">
+            </div>
+            <div class="rX7">Depavath Ratna</div>
+            <div class="rX8">Software Developer</div>
+
+            <div class="rX4">
+                <div class="rX5">Contact</div>
+                <div class="rX9"><i class="fas fa-envelope"></i><a
+                        href="mailto:ratnadeveloperofficial@gmail.com">ratnadeveloperofficial@gmail.com</a></div>
+                <div class="rX9"><i class="fas fa-phone"></i>+91 99630 33582</div>
+                <div class="rX9"><i class="fas fa-map-marker-alt"></i>Hyderabad, Telangana</div>
+                <div class="rX9"><i class="fab fa-linkedin"></i><a
+                        href="https://linkedin.com/in/depavath-ratna">linkedin.com/in/depavath-ratna</a></div>
+                <div class="rX9"><i class="fab fa-github"></i><a
+                        href="https://github.com/ratnadeveloper">github.com/ratnadeveloper</a></div>
+                <div class="rX9"><i class="fas fa-globe"></i><a
+                        href="https://ratnadeveloper.github.io">ratnadeveloper.github.io</a></div>
+            </div>
+
+            <div class="rX4">
+                <div class="rX5">Languages</div>
+                <div class="rXb"><span>English</span><span class="rXn">Fluent</span></div>
+                <div class="rXb"><span>Telugu</span><span class="rXn">Native</span></div>
+                <div class="rXb"><span>Hindi</span><span class="rXn">Fluent</span></div>
+            </div>
+
+            <div class="rX4">
+                <div class="rX5">Certifications</div>
+                <div class="rX6"><strong>AI Skills Passport</strong> - EY &amp; Microsoft</div>
+                <div class="rX6"><strong>Cybersecurity Essentials</strong> - Cisco</div>
+                <div class="rX6"><strong>Cisco Packet Tracer</strong> - Cisco</div>
+                <div class="rX6"><strong>DSA with Java</strong> - LetsUpgrade</div>
+                <div class="rX6"><strong>Data Science with Python</strong> - LetsUpgrade</div>
+                <div class="rX6"><strong>Node.js Bootcamp</strong> - LetsUpgrade</div>
+                <div class="rX6"><strong>Cyber Security &amp; Ethical Hacking</strong> - LetsUpgrade</div>
+                <div class="rX6"><strong>Git &amp; GitHub</strong> - LetsUpgrade</div>
+                <div class="rX6"><strong>Figma Bootcamp</strong> - LetsUpgrade</div>
+                <div class="rX6"><strong>Placement Prep</strong> - LetsUpgrade</div>
+            </div>
+        </div>
+
+        
+        <div class="rXi">
+            <div class="rXj">
+                <div class="rX3">Summary</div>
+                <p>Motivated 3rd Year B.Tech CSE (Data Science) student with hands-on experience in full-stack
+                    development, browser extension development, bot creation, and automation. Published a Chrome
+                    extension with <strong>2,000+ active users</strong> and <strong>4.8/5 star rating</strong>. Strong
+                    foundations in Python, Java, and C++ with active interest in Data Science, Machine Learning, and AI.
+                    Passionate about building tools that solve real problems and contributing to open source.</p>
+            </div>
+
+            <div class="rXj">
+                <div class="rX3">Education</div>
+                <div class="rXd">
+                    <div class="rXc">
+                        <h3>B.Tech - Computer Science &amp; Engineering (Data Science)</h3>
+                        <span class="rXq">2023 - 2027</span>
+                    </div>
+                    <div class="rXg">CMR Institute of Technology, Hyderabad</div>
+                    <div class="rXf"><strong>Coursework:</strong> Data Structures &amp; Algorithms, Machine
+                        Learning, DBMS, Computer Networks, OS</div>
+                </div>
+            </div>
+
+            <div class="rXj">
+                <div class="rX3">Projects</div>
+                <div class="rX2">
+                    <h3>Bing Search Helper - Chrome Extension</h3>
+                    <div class="rXp">JAVASCRIPT &bull; CHROME EXTENSION API &bull; PUBLISHED ON CHROME WEB STORE</div>
+                    <ul>
+                        <li>Built and published a Chrome extension automating daily Bing searches for Microsoft Rewards
+                        </li>
+                        <li>Achieved <strong>2,000+ active users</strong> and <strong>4.8/5 star rating</strong></li>
+                        <li>Handles rate limiting, session management, and cross-tab synchronization</li>
+                    </ul>
+                </div>
+                <div class="rX2">
+                    <h3>Own Music - Discord &amp; Telegram Bot</h3>
+                    <div class="rXp">DISCORD.JS &bull; NODE.JS &bull; TELEGRAM BOT API</div>
+                    <ul>
+                        <li>Music bot streaming high-quality audio across Discord and Telegram platforms</li>
+                        <li>Supports play, pause, skip, queue management, and multi-server deployment</li>
+                    </ul>
+                </div>
+                <div class="rX2">
+                    <h3>Blockchain Certificate Verification</h3>
+                    <div class="rXp">JAVASCRIPT &bull; BLOCKCHAIN &bull; WEB3 &bull; DECENTRALIZED</div>
+                    <ul>
+                        <li>Decentralized certificate verification system with tamper-proof security</li>
+                        <li>Enables transparent verification of educational certificates on blockchain</li>
+                    </ul>
+                </div>
+                <div class="rX2">
+                    <h3>Multi-Format File Downloader</h3>
+                    <div class="rXp">PYTHON &bull; FLASK &bull; VPS &bull; WEB APPLICATION</div>
+                    <ul>
+                        <li>Full-stack web application enabling multi-format file downloading</li>
+                        <li>Deployed across multiple VPS environments with robust error handling</li>
+                    </ul>
+                </div>
+                <div class="rX2">
+                    <h3>Open Source &amp; Automation Tools</h3>
+                    <div class="rXp">PYTHON &bull; LINUX &bull; DOCKER &bull; SHELL SCRIPTING &bull; 12+ REPOSITORIES
+                    </div>
+                    <ul>
+                        <li>Maintain 12+ GitHub repositories with privacy-first utilities and automation tools</li>
+                        <li>Build clean, scalable open-source tools focused on solving real-world problems</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rXj">
+                <div class="rX3">Skills</div>
+                <div class="rX1">
+                    <span>Python</span><span>Java</span><span>C++</span>
+                    <span>JavaScript</span><span>HTML5 / CSS3</span><span>Node.js / Flask</span>
+                    <span>Docker</span><span>AWS / Azure / GCP</span><span>Linux / Ubuntu</span>
+                    <span>Git / GitHub</span><span>MariaDB / SQLite</span><span>Firebase</span>
+                    <span>NumPy / Pandas</span><span>Selenium</span><span>Discord.js</span>
+                    <span>Telegram Bot API</span><span>Chrome Ext. API</span><span>Shell Scripting</span>
+                </div>
+            </div>
+
+            <div class="rXj" style="margin-bottom: 0;">
+                <div class="rX3">Interests</div>
+                <p class="rX0">Data Science &bull; Machine Learning &bull; AI &bull; Open Source &bull;
+                    Automation &bull; Cloud Computing &bull; Blockchain &bull; Cybersecurity</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
